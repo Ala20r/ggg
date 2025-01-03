@@ -1,0 +1,107 @@
+@font-face {
+    font-family:Tajawal;
+    src: url(Tajawal-Regular);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: Tajawal;
+   font-size: 16px;
+}
+body{
+    background:radial-gradient(circle, rgba(4,0,68,1) 33%, rgba(1,54,224,1) 62%);
+}
+html{
+    --primar-color: #142850;
+    --light-primy-color:#26496d;
+    --secondary-coior: #00909e;
+    --black:#111111;
+    --whith:#eeeeee;
+}
+
+.navbar {
+    background-color: rgb(13, 0, 83);
+}
+.navbar-list{
+    list-style: none;
+}
+
+.navbar-iten{
+    display: inline-block;
+    height: 50px;
+    width: 90px;
+    line-height: 50px;
+    text-align: center;
+   
+}
+.navbar-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbar-iten:hover {
+background-color:#0718ff;
+
+transition: 0,3s;
+}
+
+.reese{
+    padding: 10em;
+    text-align: center;
+    color: white;
+    background: radial-gradient(circle, rgb(1, 54, 224, 1) 33%, rgba(1,54,224,1) 62%);
+}
+.job{
+    font-size: 2em;
+}
+.name{
+    font-size: 1.5em;
+}
+
+/* cards */
+
+.cards{
+padding: 5rem 2rem;
+background-color: rgb(4,0,68);
+background: radial-gradient(circle, rgba(4,0,68,1) 33%, rgba(1,54,224,1) 62%);
+text-align: center;
+}
+.card{
+    width: 25vw;
+    background-color:white;
+    padding: 1.5rem;
+    margin: 1rem .5rem;
+    display: inline-block;
+    text-align:right;
+transition: .2s;
+border-radius: 1rem;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-img{
+    width: 100%;
+
+}
+
+@media (max-width:650px){
+    .navbar-iten{
+        display: inline-block;
+    display: block;
+    text-align: center;
+    width: 100px;
+    }
+    .card{
+        width: 20vw;
+    }
+}
+.footer{
+    background-color: rgba(4,0,68,1) ;
+    padding:.5rem ;
+    color: var(--whith);
+}
+.footer div {
+    display: inline-block;
+    margin: 1rem 4rem;
+}
